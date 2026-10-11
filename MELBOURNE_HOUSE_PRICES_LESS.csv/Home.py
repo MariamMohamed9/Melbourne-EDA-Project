@@ -25,11 +25,11 @@ with col2:
 st.write("---")  
 
 # load Data
-df = pd.read_parquet("cleaned_data.parquet")
+cleaned_df = pd.read_parquet("MELBOURNE_HOUSE_PRICES_LESS.csv/cleaned_data.parquet")
 
 #Show sample of data
 st.subheader("📋 Data Overview")
-st.dataframe(df.head(10), use_container_width=True)
+st.dataframe(cleaned_df.head(10), use_container_width=True)
 
 # columns descriptions
 column_descriptions = {
@@ -63,7 +63,7 @@ description_df = pd.DataFrame(
                 column, "Description not available"
             ),
         }
-        for column in df.columns
+        for column in cleaned_df.columns
         if not column.endswith("_id")
     ]
 )

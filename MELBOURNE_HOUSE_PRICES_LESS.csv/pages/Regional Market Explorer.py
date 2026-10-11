@@ -39,11 +39,7 @@ st.markdown("""
 """, unsafe_allow_html=True)
 
 # load data
-from pathlib import Path
-import os
-
-BASE_DIR = Path(os.getcwd())
-cleaned_df = pd.read_parquet(BASE_DIR / "cleaned_data.parquet")
+cleaned_df = pd.read_parquet("cleaned_data.parquet")
 
 # Sidebar
 st.sidebar.header("📍 Filter Options")
