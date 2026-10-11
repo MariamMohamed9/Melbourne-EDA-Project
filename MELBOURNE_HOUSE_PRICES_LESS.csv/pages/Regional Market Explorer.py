@@ -39,7 +39,7 @@ st.markdown("""
 """, unsafe_allow_html=True)
 
 # load data
-cleaned_df = pd.read_parquet("cleaned_data.parquet")
+cleaned_df = pd.read_parquet("MELBOURNE_HOUSE_PRICES_LESS.csv/cleaned_data.parquet")
 
 # Sidebar
 st.sidebar.header("📍 Filter Options")
