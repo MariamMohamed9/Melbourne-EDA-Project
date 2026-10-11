@@ -1,0 +1,7 @@
+numpy==2.5.1
+pandas==2.3.3
+plotly==6.9.0
+pyarrow==25.0.1
+scikit-learn==1.9.1
+streamlit==1.44.1
+streamlit-webrtc==0.64.6
