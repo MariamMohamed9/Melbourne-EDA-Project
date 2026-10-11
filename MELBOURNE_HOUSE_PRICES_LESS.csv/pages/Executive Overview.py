@@ -35,7 +35,7 @@ with col2:
 
 # Load Data
 
-cleaned_df = pd.read_parquet("cleaned_data.parquet")
+cleaned_df = pd.read_parquet("MELBOURNE_HOUSE_PRICES_LESS.csv/cleaned_data.parquet")
 
 
 #numbers of sellers 
