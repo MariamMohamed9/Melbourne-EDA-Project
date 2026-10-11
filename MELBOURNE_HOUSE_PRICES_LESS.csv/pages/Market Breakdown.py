@@ -40,11 +40,7 @@ st.markdown("""
 </style>
 """, unsafe_allow_html=True)
 # load data
-from pathlib import Path
-import os
-
-BASE_DIR = Path(os.getcwd())
-cleaned_df = pd.read_parquet(BASE_DIR / "cleaned_data.parquet")
+cleaned_df = pd.read_parquet("MELBOURNE_HOUSE_PRICES_LESS.csv/cleaned_data.parquet")
 
 # tabs
 tab1, tab2 = st.tabs(["🔢 Numerical Analysis", "🏷️ Categorical Analysis"])
